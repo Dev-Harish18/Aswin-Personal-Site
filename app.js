@@ -1,4 +1,3 @@
-let sal = require("sal.js");
 window.onload = function () {
   //Loader animation
   const loader = document.getElementById("loader-div");
