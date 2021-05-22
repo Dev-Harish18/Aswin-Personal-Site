@@ -17,7 +17,7 @@ window.onload = function () {
       threshold: 0.3,
       once: false,
     });
-  }, 2000);
+  }, 1000);
   //Navbar animation
   document.getElementById("menu-icon").onclick = handleNavOpen();
   document.getElementById("close-icon").onclick = handleNavClose();
