@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aswin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="http://fonts.cdnfonts.com/css/pusab" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="http://fonts.cdnfonts.com/css/boycott" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/node_modules/sal.js/dist/sal.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="nav-overlay" class="nav-overlay row mx-auto">
+      <div class="close-container">
+        <span id="close-icon" class="close-btn"> &times; </span>
+      </div>
+      <ul
+        class="
+          nav-list
+          d-flex
+          p-0
+          flex-column
+          justify-content-center
+          align-items-center
+        "
+      >
+        <li id="about-btn" class="nav-item text-center my-3">About</li>
+        <li id="games-btn" class="nav-item text-center my-3">
+          Completed Games
+        </li>
+        <li id="franchises-btn" class="nav-item text-center my-3">
+          Completed Franchises
+        </li>
+      </ul>
+    </div>
+    <main id="main" class="p-0 contanier-fluid">
+      <div id="loader-div">
+        <img id="loader" src="/images/loader.jpg" />
+      </div>
+      <nav
+        class="
+          navbar
+          mx-auto
+          d-flex
+          justify-content-center
+          align-items-center
+          text-right
+          row
+          col-12
+        "
+      >
+        <img id="menu-icon" class="ml-auto" src="/images/menu.png" alt="menu" />
+      </nav>
+      <section
+        class="row mx-auto hero-container"
+        data-sal="slide-down"
+        style="--sal-duration: 0.5s"
+      >
+        <div
+          class="overlay mx-auto row justify-content-center align-items-center"
+        >
+          <div class="hero-content row mx-auto">
+            <h3
+              class="col-12 text-center mx-auto"
+              data-sal="slide-left"
+              style="--sal-duration: 0.3s; --sal-delay: 0.5s"
+            >
+              Hi I am
+            </h3>
+            <h1
+              id="name"
+              class="col-12 text-center mx-auto"
+              data-sal="slide-right"
+              style="--sal-duration: 0.3s; --sal-delay: 0.5s"
+            ></h1>
+            <small
+              id="small"
+              class="text-center mx-auto"
+              data-sal="slide-left"
+              style="--sal-duration: 0.3s; --sal-delay: 0.5s"
+              >PROUD TO BE A PC GAMER</small
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        id="about"
+        class="
+          my-5
+          row
+          d-flex
+          justify-content-center
+          align-items-center
+          about-container
+          mx-auto
+        "
+      >
+        <div
+          class="
+            col-12 col-md-6
+            mx-auto
+            d-flex
+            align-items-center
+            justify-content-center
+            about-img-container
+          "
+          data-sal="slide-right"
+          style="--sal-duration: 0.5s"
+        >
+          <img class="mx-auto" src="/images/aswinColor.png" alt="gaming" />
+        </div>
+        <div
+          class="col-12 col-md-6 mx-auto px-auto about-content-container"
+          data-sal="slide-left"
+          style="--sal-duration: 0.5s"
+        >
+          <h1 class="title mt-2">ABOUT</h1>
+          <p class="my-auto">
+            I’ve been gaming all my life. I've been playing games of all sorts
+            since before I could write my name.PC gaming is what I grew up on,
+            so it still gets the majority of my time and attention than mobile
+            games.
+          </p>
+        </div>
+      </section>
+      <section id="games" class="row games-container mx-auto">
+        <h1 class="mx-auto text-center my-4">Completed Games</h1>
+        <div class="games-outer-container row mx-auto align-items-center">
+          <div
+            class="
+              col-12 col-md-4 col-lg-3
+              games-img-container
+              mx-auto
+              align-items-center
+            "
+            data-sal="slide-left"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/Bully.jpg" alt="bully" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-right"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/DeadPool.jpg" alt="dead-pool" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-left"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/EnemyFront.jpg" alt="EnemyFront" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-right"
+            style="--sal-duration: 0.5s"
+          >
+            <img
+              src="/images/Games/FreedomFighters.jpg"
+              alt="FreedomFighters"
+            />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-left"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/Hulk.jpg" alt="Hulk" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-right"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/MadMax.jpg" alt="MadMax" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-left"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/RedDead.jpg" alt="RedDeadRedemption" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-right"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/SleepingDogs.jpg" alt="SleepingDogs" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-left"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/SplinterCell.jpg" alt="SplinterCell" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-right"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/TombRaider.jpg" alt="TombRaider" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-left"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/TotalOverdose.jpg" alt="TotalOverdose" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-right"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/Wolverine.jpg" alt="Wolverine" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-left"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/dead light.jpg" alt="dead-light" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-right"
+            style="--sal-duration: 0.5s"
+          >
+            <img
+              src="/images/Games/HitmanAbsolution.jpg"
+              alt="HitmanAbsolution"
+            />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-left"
+            style="--sal-duration: 0.5s"
+          >
+            <img src="/images/Games/im alive.jpg" alt="imalive" />
+          </div>
+
+          <div
+            class="col-12 col-md-4 col-lg-3 games-img-container"
+            data-sal="slide-right"
+            style="--sal-duration: 0.5s"
+          >
+            <img
+              src="/images/Games/piratesOfCaribbean.jfif"
+              alt="piratesOfCaribbean"
+            />
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section id="franchises" class="row franchises">
+        <h1 class="col-12 mx-auto text-center my-4">Completed Franchises</h1>
+
+        <div class="col-12 p-5 franchise-container mx-auto">
+          <div class="row mx-auto justify-content-center">
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-left"
+              style="--sal-duration: 0.5s"
+            >
+              <img
+                src="/images/Franchises/assassinsCreed.jfif"
+                alt="assassinsCreed"
+              />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-right"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/batman.jfif" alt="batman" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-left"
+              style="--sal-duration: 0.5s"
+            >
+              <img
+                src="/images/Franchises/battlefield.jfif"
+                alt="battlefield"
+              />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-right"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/justCause.jfif" alt="justCause" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-left"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/maxPayne.jfif" alt="maxPayne" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-right"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/darkSouls.jfif" alt="darkSouls" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-left"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/deathSpace.jfif" alt="deathSpace" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-right"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/farcry.jfif" alt="farcry" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-left"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/gta.jfif" alt="gta" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-right"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/spiderman.jfif" alt="spiderman" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-left"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/rage.jfif" alt="rage" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-right"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/watchDogs.jfif" alt="watchDogs" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-left"
+              style="--sal-duration: 0.5s"
+            >
+              <img
+                src="/images/Franchises/transformers.jfif"
+                alt="transformers"
+              />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-right"
+              style="--sal-duration: 0.5s"
+            >
+              <img
+                src="/images/Franchises/princeOfPersia.jfif"
+                alt="princeOfPersia"
+              />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-left"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/igi.jfif" alt="igi" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-right"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/callOfDuty.jfif" alt="callOfDuty" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-left"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/prototype.jfif" alt="prototype" />
+            </div>
+
+            <div
+              class="col-12 col-md-6 col-lg-4 my-3 text-center"
+              data-sal="slide-right"
+              style="--sal-duration: 0.5s"
+            >
+              <img src="/images/Franchises/mafia.jfif" alt="mafia" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <section class="row footer">
+        <div
+          class="mt-2 follow col-12 mx-auto text-center"
+          data-sal="slide-down"
+          style="--sal-duration: 0.8s"
+        >
+          Follow me on :
+          <a href="https://www.instagram.com/aswi_nss/">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://twitter.com/Aswin97172331">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
+        <div
+          class="mx-auto my-2 text-center col-12"
+          data-sal="slide-up"
+          style="--sal-duration: 0.8s"
+        >
+          Made with <i class="fa fa-heart"></i> By
+          <span class="author">Harish</span>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+    integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="/node_modules/sal.js/dist/sal.js"></script>
+  <script src="/app.js"></script>
+</html>

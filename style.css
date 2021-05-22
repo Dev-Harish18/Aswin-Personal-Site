@@ -1,0 +1,391 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: black;
+}
+#main {
+  position: absolute;
+  left: 0;
+  top: 0vh;
+  min-height: 100vh;
+  width: calc((var(--vw, 1vw) * 100));
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat";
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0vw;
+  width: 7vw;
+  height: 17vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+.navbar img {
+  width: 10vw;
+  object-fit: cover;
+  height: 100%;
+  cursor: pointer;
+}
+.navbar img.ripple {
+  animation: fab 0.5s ease forwards;
+}
+.nav-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  font-size: 10vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.5 ease;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(180%) blur(18px);
+}
+.nav-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.nav-item {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 16px;
+  color: #e74d89;
+  font-weight: 900;
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateX(-10px);
+}
+.nav-item::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s cubic-bezier(0.8, -0.5, 0.2, 1.4);
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #e74d89;
+}
+.nav-item:hover::after {
+  transform: translateX(0%);
+}
+.nav-item:nth-child(1) {
+  transition-delay: 0.5s;
+}
+.nav-item:nth-child(2) {
+  transition-delay: 1s;
+}
+.nav-item:nth-child(3) {
+  transition-delay: 1.5s;
+  margin-right: 17px;
+}
+#menu-icon:hover {
+  filter: grayscale(100%);
+}
+.close-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 1vw;
+  top: 0;
+  transition: all 0.5s ease;
+}
+#close-icon {
+  color: #e74d89;
+  font-weight: 800;
+  font-size: 100px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+#close-icon:hover {
+  color: white;
+}
+#loader-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+#loader {
+  display: block;
+  animation: gif 0.5s infinite alternate;
+  animation-timing-function: cubic-bezier(0.8, -0.5, 0.2, 1.4);
+  width: 200px;
+  height: 200px;
+}
+.hero-container {
+  position: relative;
+  background-image: url("/images/JD.png"),
+    radial-gradient(circle, rgba(231, 77, 137, 1) 0%, rgba(0, 0, 0, 2) 100%);
+
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.hero-container > .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  text-transform: capitalize;
+  word-spacing: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: saturate(180%) blur(4px);
+}
+.hero-container > .overlay h3 {
+  font-weight: 700;
+  font-size: 16;
+}
+.about-img-container img {
+  width: 100%;
+  height: 300px;
+  filter: grayscale(100%);
+  object-fit: contain;
+  background-position: top;
+  transition: filter 0.5s ease;
+}
+.about-img-container img:hover {
+  filter: grayscale(0%);
+}
+.games-container {
+  background-color: #e74d89;
+}
+.games-outer-container div img {
+  height: 250px;
+  padding: 0%;
+  object-fit: contain;
+  border: 4px solid #1d2450;
+  transition: all 0.5s ease-in-out;
+}
+.games-outer-container div img:hover {
+  filter: grayscale(100%);
+}
+.games-img-container {
+  max-height: 400px;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+.games-container h1,
+.franchises h1 {
+  position: relative;
+  font-family: "Boycott";
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000;
+}
+.franchises h1 {
+  color: #e74d89;
+}
+.franchise-container div div img {
+  object-fit: contain;
+  border: 4px solid #1d2450;
+  height: 400px;
+}
+.franchise-container div div img:hover {
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in;
+}
+.footer {
+  background-color: #e74d89;
+  font-weight: 600;
+}
+.footer div a {
+  color: #fff;
+  text-decoration: none;
+}
+.author {
+  margin: 0 5px;
+  font-size: 25px;
+  color: #1d2450;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-family: "Pusab";
+}
+.fa-heart {
+  color: #1d2450;
+  font-size: 20px;
+}
+.fa-twitter,
+.fa-instagram {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  font-size: 25px;
+  margin: 0 2px;
+  display: inline-block;
+}
+.fa-twitter:hover,
+.fa-instagram:hover {
+  cursor: pointer;
+  color: #e74d89;
+  box-shadow: 0 0 15px #1d2450;
+  border-color: #e74d89;
+  background-color: #1d2450;
+  transition: all 0.2s ease-in;
+}
+.title {
+  display: inline-block;
+  color: #e74d89;
+  position: relative;
+  overflow-x: hidden;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80%;
+  height: 6px;
+  background-color: #ffffff;
+}
+
+#name {
+  font-weight: 800;
+  font-family: "Pusab";
+  letter-spacing: 8px;
+  text-shadow: 1px 1px 10px rgba(101, 5, 245, 0.2);
+  color: #e74d89;
+}
+#name::after {
+  content: "|";
+  font-weight: 900;
+  display: inline;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+#small {
+  font-weight: 800;
+  font-size: 20px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes gif {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes fab {
+  0% {
+    opacity: 0.6;
+    height: 100px;
+    width: 100px;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.1;
+  }
+  100% {
+    height: 150px;
+    width: 150px;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-container {
+    background-size: cover;
+  }
+
+  #close-icon {
+    font-size: 50px;
+  }
+  .nav-item {
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .navbar {
+    width: 15vw;
+    height: 18vh;
+  }
+  .about-img-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+  .games-container h1 {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #000;
+  }
+  .games-img-container {
+    max-height: 400px;
+  }
+  .games-outer-container div img {
+    height: 300px;
+  }
+  #small {
+    font-size: 14px;
+  }
+  .franchise-container div {
+    margin: 10px;
+  }
+}
