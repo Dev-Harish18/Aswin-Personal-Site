@@ -1,23 +1,21 @@
 window.onload = function () {
   //Loader animation
   const loader = document.getElementById("loader-div");
-  setTimeout(function () {
-    loader.style.opacity = 0;
-    loader.style.display = "none";
-    //Typed js
-    new Typed("#name", {
-      strings: ["Aswin", "Gamer"],
-      typeSpeed: 100,
-      backSpeed: 100,
-      loop: true,
-      showCursor: false,
-    });
-    //Sal Init
-    sal({
-      threshold: 0.3,
-      once: false,
-    });
-  }, 1000);
+  loader.style.opacity = 0;
+  loader.style.display = "none";
+  //Typed js
+  new Typed("#name", {
+    strings: ["Aswin", "Gamer"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+    showCursor: false,
+  });
+  //Sal Init
+  sal({
+    threshold: 0.3,
+    once: false,
+  });
   //Navbar animation
   document.getElementById("menu-icon").onclick = handleNavOpen();
   document.getElementById("close-icon").onclick = handleNavClose();
